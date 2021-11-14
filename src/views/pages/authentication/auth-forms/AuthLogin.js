@@ -6,7 +6,6 @@ import {
     Box,
     Button,
     Checkbox,
-    Divider,
     FormControl,
     FormControlLabel,
     FormHelperText,
@@ -75,11 +74,10 @@ const FirebaseLogin = ({ ...others }) => {
                         await axios
                             .post('https://localhost:5001/api/login', values)
                             .then((res) => {
-                                console.log(res.data);
+                                console.log(res.status);
                                 alert(JSON.stringify(res.data, null, 2));
                             })
                             .catch((error) => {
-                                console.log(error);
                                 alert(JSON.stringify(error, null, 2));
                             });
                     } catch (err) {

@@ -15,9 +15,7 @@ import {
     InputAdornment,
     InputLabel,
     OutlinedInput,
-    Snackbar,
-    Typography,
-    useMediaQuery
+    Typography
 } from '@mui/material';
 
 // third party

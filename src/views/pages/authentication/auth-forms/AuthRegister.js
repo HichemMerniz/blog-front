@@ -7,7 +7,6 @@ import {
     Box,
     Button,
     Checkbox,
-    Divider,
     FormControl,
     FormControlLabel,
     FormHelperText,
@@ -47,9 +46,7 @@ const FirebaseRegister = ({ ...others }) => {
     const [strength, setStrength] = useState(0);
     const [level, setLevel] = useState();
 
-    const handleClickShowPassword = () => {
-        setShowPassword(!showPassword);
-    };
+ 
 
     const handleMouseDownPassword = (event) => {
         event.preventDefault();
